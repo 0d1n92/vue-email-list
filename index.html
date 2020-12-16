@@ -9,8 +9,9 @@
   </head>
   <body>
     <div   id="root">
-      <p v-for="element in mailList">{{element}}</p>
-
+      <div v-if="mailList.length==10">
+        <p v-for="element in mailList">{{element}}</p>
+      </div>
     </div>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
