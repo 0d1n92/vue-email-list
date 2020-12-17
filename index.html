@@ -10,7 +10,7 @@
   <body>
     <div   id="root">
       <div v-if="mailList.length==10">
-        <p v-for="element in mailList">{{element.mail}}</p>
+        <p v-for="element in mailList">{{ element.mail }} - {{ element.message }}</p>
       </div>
     </div>
     <script src="js/script.js" charset="utf-8"></script>
